@@ -237,12 +237,25 @@ body {
     border-radius: 5px;
     color: #C3B3FF;
     padding: 5px 5px;
-    align-content: center;
     content: "Здесь ничего нет";
     position: absolute;
     margin: 23px;
     left: 20%;
     width: 138px;
+}
+
+.footer {
+    display: inline-block;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    height: 60px;
+    width: 300px;
+    right: 0px;
+}
+
+.footer a {
+    text-decoration: none;
 }
 
 @media (max-width: 600px) {
