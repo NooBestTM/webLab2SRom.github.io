@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
@@ -15,16 +16,28 @@
                 <img src="img/logo.svg" alt="Логотип" class="logo header__logo">
             </a>
             <nav class="nav">
-                <a href="#" class="nav__link empty-link"><span>Билеты</span></a>
-                <a href="https://www.kinopoisk.ru/film/718222/" target="_blank" class="nav__link">О фильме</a>
-                <a href="https://www.kinopoisk.ru/film/718222/#btn_rating_close" target="_blank" class="nav__link">Отзывы</a>
-                <a href="https://www.kinopoisk.ru/film/718222/video/" target="_blank" class="nav__link">Трейлеры</a>    
+                <ul>
+                <li><a href="#" class="nav__link empty-link"><span><i class="fa fa-ticket" aria-hidden="true"></i>
+                    &nbsp;Билеты</span></a></li>
+                <li><a href="https://www.kinopoisk.ru/film/718222/" target="_blank" class="nav__link">
+                <i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp;О фильме</a></li>
+                <li></li><a href="https://www.kinopoisk.ru/film/718222/#btn_rating_close" target="_blank" class="nav__link">
+                    <i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;Отзывы</a></li>
+                    <li><a href="https://www.kinopoisk.ru/film/718222/video/" target="_blank" class="nav__link">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp;Трейлеры</a>
+                    <ul class="nav__empty-list">
+                        <li>Здесь</li>
+                        <li>Ничего</li>
+                        <li>Нет</li>
+                    </ul>
+                </li>
+                </ul>
             </nav>
         </header>
         <main>
             <div class="hero">
-                <span class="hero__subtitle">Эпизод IX</span>
-                <h1 class="hero__title">Скайуокер. Восход </h1>
+                <span class="hero__subtitle bounceInLeft animated">Эпизод IX</span>
+                <h1 class="hero__title bounceInLeft animated">Скайуокер. Восход </h1>
                 <p class="hero__description">Фильм завершает невероятную историю семьи Скайуокеров, длящуюся уже более сорока лет,
                      и обещает дать ответы на все загадки из предыдущих серий. Зрителя ожидают старые и новые герои,
                      уникальные миры, увлекательные путешествия на край Галактики и грандиозный финал фантастической саги.

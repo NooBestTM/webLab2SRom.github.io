@@ -1,13 +1,7 @@
 @font-face {
-    font-family: 'fontf401366193520cdf512c7ade98260e27';
-        
-        src:    url('https://nomail.com.ua/files/eot/f401366193520cdf512c7ade98260e27.eot?#iefix') format('embedded-opentype'),
-                url('https://nomail.com.ua/files/woff/f401366193520cdf512c7ade98260e27.woff') format('woff'),
-                url('https://nomail.com.ua/files/woff2/f401366193520cdf512c7ade98260e27.woff2') format('woff2');
-    }
-    
-@font-face { font-family: 'ProximaNova-Black';  src: local('ProximaNova-Black'), url('https://nomail.com.ua/files/woff/f401366193520cdf512c7ade98260e27.woff') format('woff'); }
-    
+    font-family: 'ProximaNova-Black';
+    src: url("../fonts/proximanova-black.otf");
+}    
 
 *, *::after,
  *::before {
@@ -38,10 +32,47 @@ body {
     margin-right: 71px;
 }
 
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
 .nav__link {
+    display: inline-block;
     text-decoration: none;
     color: white;
     margin-right: 15px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul ul li {
+    text-align: center;
+    min-width: 100px;
+    float: none;
+    position: relative;
+    display: list-item;
+    background-color: #B02000;
+    border-radius: 5%;
+}
+
+nav ul ul li:hover{
+    background-color: #07056F;
 }
 
 .hero__subtitle {
@@ -241,7 +272,7 @@ body {
     position: absolute;
     margin: 23px;
     left: 20%;
-    width: 155px;
+    width: 140px;
 }
 
 .footer {
@@ -258,7 +289,96 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 600px) {
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(-3000px, 0, 0);
+      transform: translate3d(-3000px, 0, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(25px, 0, 0);
+      transform: translate3d(25px, 0, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(5px, 0, 0);
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(-3000px, 0, 0);
+      transform: translate3d(-3000px, 0, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(25px, 0, 0);
+      transform: translate3d(25px, 0, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(5px, 0, 0);
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .bounceInLeft {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+  }
+
+
+@media (max-width: 800px) {
     body {
         background: #070506 url(../img/Kylo.jpg) top 20% right -30% no-repeat;
         background-size: 80%;
@@ -292,6 +412,9 @@ body {
     .nav {
         display: flex;
         flex-direction: column;
+    }
+    nav ul li {
+        display: flex;
     }
 
     .nav__link {
