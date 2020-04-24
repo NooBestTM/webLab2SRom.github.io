@@ -259,7 +259,6 @@ nav ul ul li:hover{
 .empty-link {
     display: inline;
     position: relative;
-    cursor: none;
 }
 
 .empty-link:hover::after {
@@ -268,7 +267,7 @@ nav ul ul li:hover{
     border-radius: 5px;
     color: #C3B3FF;
     padding: 5px 5px;
-    content: "Здесь ничего нет";
+    content: "Оставшиеся задания из 3 пункта";
     position: absolute;
     margin: 23px;
     left: 20%;
