@@ -1,0 +1,27 @@
+table {
+    width: 75%;
+    margin: auto;
+    border-radius: 1%;
+    align-items: center;
+    background-color: white;
+    border-collapse: collapse;
+    border: 2px solid red;
+    margin-bottom: 20px;
+}
+caption {
+    background-color: lightgray;
+}
+
+tr {
+    border: black 2px solid;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+    padding-left: 20px;
+    min-width: 550px;
+    border-bottom: red 2px;
+    line-height: 30px;
+    font-size: 25px;
+}

@@ -18,6 +18,7 @@ body {
 header {
     background: linear-gradient(90deg, #000, #D3D311, #D3D311, #000) no-repeat;
 }
+
 header h1 {
     font-size: 100px;
     font-family: font1;
@@ -52,7 +53,7 @@ main {
     -webkit-transition: all 0.3s ease-out;
     }
 
-.image img:hover{
+.image img:hover {
     -webkit-transform: scale(2);
     -moz-transform: scale(1.5);
     -o-transform: scale(1.1);
@@ -88,4 +89,5 @@ aside {
     list-style-type: none;
     border-left: 10px solid #666;
     border-bottom: 1px solid #666;
+    st
 }
