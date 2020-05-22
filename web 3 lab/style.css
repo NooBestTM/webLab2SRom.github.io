@@ -25,3 +25,18 @@ td {
     line-height: 30px;
     font-size: 25px;
 }
+  
+.timer {
+    padding-left: 2%;
+    align-items: center;
+    z-index: 2;
+    flex-direction: row-reverse;
+    position: fixed;
+    max-width: 256px;
+    right: 0;
+    border-radius: 8px 0 0 8px;
+    background-color: slateblue;
+    color: white;
+    border: 1px black solid;
+    border-right: none;
+}
