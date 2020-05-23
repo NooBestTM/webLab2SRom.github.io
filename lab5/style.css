@@ -1,0 +1,22 @@
+div {
+    min-width: 200px;
+    min-height: 100px;
+}
+
+.container {
+    min-height: 1500px;
+}
+.info{
+    position: fixed;
+}
+
+.time {
+    position: fixed;
+    right: 0px;
+    bottom: 5px;
+    border: 2px black solid;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    transition: linear 1s;
+}
